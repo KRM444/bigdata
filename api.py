@@ -49,5 +49,7 @@ def print_firstnrecords(API_KEY: str, page_size: int = 1000, num_pages: int = 1,
 
 			print(f"Successfully wrote {len(results)} JSON data into file: {output}")
 
-
-
+		#return results
+	except Exception as e:
+			print(f"Something went wrong: {e}")
+			raise
